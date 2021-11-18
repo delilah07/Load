@@ -2,4 +2,4 @@
 
 web-shop Gulp, Scss, jQuery
 
-main page https://github.com/delilah07/Loud/blob/main/dist/index.html
+main page https://delilah07.github.io/Loud/blob/main/dist/index.html

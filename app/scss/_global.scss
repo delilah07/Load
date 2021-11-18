@@ -54,6 +54,9 @@ h2 {
     line-height: 1.2rem;
   }
 }
+p {
+  font-size: 0.8rem;
+}
 .title::before {
   content: "";
   position: relative;
@@ -164,24 +167,42 @@ h2 {
     }
   }
   &-pagination {
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2rem;
     position: absolute;
-    bottom: 70px;
     bottom: 66px;
-    left: calc(50% + 466px);
+    left: calc(50% + 478px);
     transform: translateX(-100%);
 
     @media screen and (max-width: 1296px) {
       left: inherit;
-      right: 181px;
+      right: 174px;
       transform: none;
     }
 
     span {
       color: $orange-color;
     }
+  }
+}
+
+.slick-slider.dark-mode {
+  .slick-arrow {
+    background-image: url(../images/icon/arrowblack.svg);
+
+    &:hover {
+      background-image: url(../images/icon/arrowviolet.svg);
+    }
+  }
+  .slick-dots button {
+    background-color: $dark-color;
+  }
+  .slick-active button {
+    background-color: $violet-color;
+  }
+  .slick-pagination {
+    color: $dark-color;
   }
 }

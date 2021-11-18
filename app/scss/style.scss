@@ -374,7 +374,7 @@
 }
 
 // main
-// intro
+// intro section
 .intro {
   padding-top: 82px;
   background-color: $dark-color;
@@ -434,5 +434,352 @@
     line-height: 1.7rem;
     margin-bottom: 36px;
     max-width: 435px;
+  }
+}
+
+// tastes section
+.tastes {
+  padding: 98px 0 60px;
+
+  &__content {
+    position: relative;
+  }
+
+  &__slider {
+    margin: 22px 0 -6px;
+    padding-bottom: 70px;
+  }
+
+  .slick-slide {
+    padding: 0 6px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .slick-dots {
+    bottom: 0;
+    @media screen and (max-width: 1296px) {
+      right: 0;
+    }
+  }
+  .slick-arrow {
+    bottom: 20px;
+  }
+  .slick-prev {
+    @media screen and (max-width: 1296px) {
+      right: 16px;
+    }
+  }
+  .slick-next {
+    @media screen and (max-width: 1296px) {
+      right: 0;
+    }
+  }
+  .slick-pagination {
+    bottom: 15px;
+    @media screen and (max-width: 1296px) {
+      right: 174px;
+    }
+  }
+}
+.slide-tastes {
+  &__content {
+    padding: 11% 9px 11% 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__link {
+    position: relative;
+    display: block;
+
+    h3 {
+      transition: color 0.5s ease-in-out;
+    }
+
+    &:hover h3 {
+      color: $orange-color;
+    }
+  }
+}
+
+// abous us section
+.about-us {
+  background: url(../images/img/aboutus/background.jpg) center no-repeat;
+  background-size: cover;
+  padding: 88px 0 36px;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    background-image: url(../images/img/aboutus/backgroundmob.jpg);
+    padding: 40px 0;
+  }
+  &__content {
+    display: flex;
+
+    > * {
+      flex: 0 0 50%;
+      gap: 50px;
+    }
+
+    p {
+      margin: 32px 0 42px;
+      max-width: 555px;
+    }
+  }
+  &__img {
+    width: 565px;
+    height: 565px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 433px;
+      height: 496px;
+      background: url(../images/img/aboutus/semicircle.svg) center no-repeat;
+      background-size: contain;
+      top: -30px;
+      left: -30px;
+    }
+  }
+}
+.advantages {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 105px);
+    grid-gap: 40px 58px;
+  }
+  &__item {
+    max-width: 105px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__icon {
+    border-radius: 50%;
+    border: 4px solid rgba($violet-color, 0.5);
+
+    div {
+      background-color: $violet-color;
+      height: 78px;
+      width: 78px;
+      padding: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.8rem;
+  }
+}
+
+// reviews section
+.reviews {
+  padding: 83px 0 90px;
+  overflow-y: hidden;
+
+  &__tab {
+    margin-top: 40px;
+  }
+
+  &__slider {
+    margin: 22px 0 -6px;
+    padding-bottom: 70px;
+  }
+
+  .slick-slide {
+    padding: 0 6px;
+  }
+  .slick-dots {
+    bottom: 0;
+    @media screen and (max-width: 1296px) {
+      right: 0;
+    }
+  }
+  .slick-arrow {
+    bottom: 20px;
+  }
+  .slick-prev {
+    @media screen and (max-width: 1296px) {
+      right: 16px;
+    }
+  }
+  .slick-next {
+    @media screen and (max-width: 1296px) {
+      right: 0;
+    }
+  }
+  .slick-pagination {
+    bottom: 15px;
+    @media screen and (max-width: 1296px) {
+      right: 174px;
+    }
+  }
+}
+.tab-reviews {
+  &__header {
+    height: 64px;
+  }
+  &__header-list {
+    display: flex;
+
+    > * {
+      flex: 0 0 50%;
+
+      .reviews__header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 17px 52px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.35rem;
+        background-color: $dark-color;
+        cursor: pointer;
+
+        &.active {
+          background-color: $violet-color;
+        }
+      }
+    }
+  }
+  &__body {
+    margin-top: 45px;
+  }
+  &__body-wrapper {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+.video {
+  &__btn {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../images/icon/play.svg) center no-repeat;
+    background-size: contain;
+  }
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding: 0 13px 35px 30px;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+
+    span {
+      max-height: 44px;
+      overflow-y: hidden;
+      display: block;
+    }
+  }
+}
+.video-reviews,
+.letter-reviews {
+  position: relative;
+
+  .slick-slide {
+    position: relative;
+  }
+}
+.letter-reviews {
+  .reviews__slide {
+    border: 1px solid #e8e8e8;
+    border-top: 3px solid $violet-color;
+    padding: 16px 30px 72px;
+    background: url(../images/img/leaf.png) bottom left no-repeat;
+    background-size: 100%;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #f99639;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .review__author {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .review__text {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 16px;
+  }
+  .review__date {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 20px;
+    text-align: right;
+    color: #a3a0a7;
+  }
+}
+.video-reviews__header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: relative;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon/video.svg) center no-repeat;
+    background-size: contain;
+  }
+  &.active::after {
+    content: "";
+    position: absolute;
+    height: 62px;
+    width: 62px;
+    background-color: $violet-color;
+    top: 1px;
+    right: -32px;
+    z-index: 50;
+    border-radius: 50%;
+  }
+}
+.letter-reviews__header {
+  position: relative;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+
+  &::before {
+    content: "";
+    position: relative;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon/reviews.svg) center no-repeat;
+    background-size: contain;
   }
 }
