@@ -1,0 +1,438 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+// header
+.header {
+  background-color: $dark-color;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 17px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $dark-color;
+  z-index: 100;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 82px;
+    flex: 0 0 210px;
+
+    @media screen and (max-width: 768px) {
+      height: 42px;
+      flex: 0 0 108px;
+      margin: 10px 0;
+    }
+  }
+  &__nav {
+    margin: 0 23px 0 46px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 11.5px 0 23px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__regist {
+    margin: 0 23px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 11.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__lang {
+    display: flex;
+    margin: 0 30px 0 0;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__cart {
+    display: flex;
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+}
+.nav-header {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -23px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 -11.5px;
+    }
+  }
+  &__item {
+    margin: 0 23px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 11.5px;
+    }
+  }
+}
+.regist-header {
+  &__list {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      margin-right: 12px;
+      width: 20px;
+      height: 20px;
+      background: url(../images/icon/user.svg) center no-repeat;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:nth-child(2) {
+      display: flex;
+    }
+    &:nth-child(2)::before {
+      content: "/";
+      position: relative;
+      display: block;
+      width: 6px;
+      margin-right: 5px;
+    }
+  }
+  &__item + &__item {
+    margin-left: 7px;
+  }
+}
+
+.lang-header {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+
+    &:nth-child(2) {
+      display: flex;
+    }
+    &:nth-child(2)::before {
+      content: "/";
+      position: relative;
+      display: block;
+      width: 6px;
+      margin-right: 5px;
+    }
+  }
+  &__item + &__item {
+    margin-left: 7px;
+  }
+  &__link {
+    color: $orange-color;
+  }
+}
+.cart-header {
+  &__link {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__sum {
+    margin-left: 15px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__num {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.5rem;
+      line-height: 0.6rem;
+      height: 16px;
+      background-color: $violet-color;
+      border-radius: 50%;
+      padding: 0 2px;
+      position: absolute;
+      top: -25%;
+      right: -25%;
+    }
+  }
+}
+
+.burger-header {
+  &__icon {
+    width: 22px;
+    display: flex;
+    height: 19px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      display: block;
+
+      &:nth-child(2) {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  color: #fff;
+
+  &__top {
+    background: url(../images/img/contactbackground.jpg) center no-repeat;
+    background-size: cover;
+    padding: 60px 0 50px;
+
+    @media screen and (max-width: 768px) {
+      background-image: url(../images/img/contactbackgroundmob.jpg);
+      padding: 40px 0;
+    }
+  }
+  &__contacts {
+    max-width: 475px;
+  }
+
+  &__middle,
+  &__bottom {
+    background-color: $dark-color;
+  }
+  &__middle {
+    padding: 17px 0;
+    margin-top: -3px;
+
+    @media screen and (max-width: 768px) {
+      padding: 14px 0 20px;
+
+      .footer__wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+  &__logo {
+    height: 82px;
+    flex: 0 0 210px;
+
+    @media screen and (max-width: 768px) {
+      height: 45px;
+      width: 117px;
+      flex: 0 0 42px;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #fff;
+    padding: 14px 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 14px 0 19px;
+
+      a {
+        width: 85px;
+        height: 18px;
+        display: block;
+      }
+    }
+
+    div:first-child {
+      font-size: 0.7rem;
+      line-height: 0.85rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.55rem;
+        line-height: 0.65rem;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.contacts-footer {
+  &__text {
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 30px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.7rem;
+      line-height: 1.1rem;
+      margin-top: 20px;
+    }
+  }
+  &__list {
+    margin-top: 22px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__item + &__item {
+    margin-top: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 18px;
+    }
+  }
+  &__item img {
+    height: 44px;
+    width: 44px;
+    margin-right: 23px;
+
+    @media screen and (max-width: 768px) {
+      height: 22px;
+      width: 22px;
+      margin-right: 12px;
+    }
+  }
+  &__item span {
+    font-size: 0.8rem;
+    line-height: 0.95rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.7rem;
+      line-height: 0.85rem;
+    }
+  }
+}
+.socials-footer {
+  &__text {
+    color: $orange-color;
+    margin-bottom: 18px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.7rem;
+      line-height: 1.1rem;
+      margin: 20px 0 11px;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: 40px;
+    height: 40px;
+  }
+  &__item + &__item {
+    margin-left: 12px;
+  }
+}
+
+// main
+// intro
+.intro {
+  padding-top: 82px;
+  background-color: $dark-color;
+  color: #fff;
+  position: relative;
+
+  &__slide {
+    width: 100%;
+    position: relative;
+
+    img {
+      margin: 0;
+    }
+  }
+}
+.slide-intro {
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .container {
+      height: 100%;
+    }
+  }
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "18+";
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: 100px;
+      height: 100px;
+      background-color: $violet-color;
+      border-radius: 50%;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 36px;
+    max-width: 435px;
+  }
+}
