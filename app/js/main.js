@@ -186,10 +186,15 @@ $(function () {
   // accordion
   $(".accordion__body").hide();
   $(".accordion__header").on("click", function () {
-    $(".accordion__item").removeClass("active");
-    $(".accordion__body").slideUp();
-    $(this).parent().addClass("active");
-    $(this).siblings().slideDown();
+    if ($(this).parent().hasClass("active")) {
+      $(".accordion__item").removeClass("active");
+      $(".accordion__body").slideUp();
+    } else {
+      $(".accordion__item").removeClass("active");
+      $(".accordion__body").slideUp();
+      $(this).parent().addClass("active");
+      $(this).siblings().slideDown();
+    }
   });
 
   // form submit

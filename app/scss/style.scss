@@ -879,9 +879,9 @@
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);
     // grid-gap: 20px 23px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 23px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 23px;
   }
 }
 .accordion {
@@ -891,6 +891,9 @@
     &.active .accordion__header::after {
       transform: rotate(180deg);
     }
+  }
+  &__item + &__item {
+    margin-top: 20px;
   }
   &__header {
     font-weight: 500;
