@@ -10,6 +10,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: #000;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 .main {
@@ -25,6 +27,11 @@ body {
   padding: 0 15px;
 }
 
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
 a {
   transition: color 0.5s ease-in-out;
 
@@ -34,11 +41,35 @@ a {
     }
   }
 }
-
-.img-responsive {
+button,
+input,
+optgroup,
+select,
+textarea,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button[disabled],
+html input[disabled],
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+input[type="checkbox"],
+input[type="radio"],
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="search"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration .img-responsive {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .title,
@@ -86,6 +117,44 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: $violet-dark-color;
+  }
+}
+
+input:not([type="submit"]) {
+  padding: 16px 20px 14px;
+  border: 1px solid #fff;
+  margin-top: 24px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+
+  &.error {
+    border: 1px solid $red-color;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $orange-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $orange-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $orange-color;
 }
 
 .slick {
@@ -93,7 +162,7 @@ p {
     display: flex;
     position: absolute;
     bottom: 50px;
-    left: calc(50% + 633px);
+    left: calc(50% + 638px);
     transform: translateX(-100%);
 
     @media screen and (max-width: 1296px) {
@@ -103,12 +172,11 @@ p {
     }
     li {
       font-size: 0;
+      cursor: pointer;
+      padding: 5px;
     }
     .slick-active button {
       background: $violet-color;
-    }
-    li + li {
-      margin-left: 10px;
     }
     button {
       border: none;
@@ -129,6 +197,7 @@ p {
     background-size: contain;
     transform: translateX(-100%);
     z-index: 50;
+    cursor: pointer;
 
     &:hover {
       background-image: url(../images/icon/arrowviolet.svg);

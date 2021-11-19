@@ -629,13 +629,15 @@
               </div>
             </div>
             <div class="about-us__img">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="images/img/aboutus/tobacco.webp"
-                />
-                <img src="images/img/aboutus/tobacco.png" alt="tobacco" />
-              </picture>
+              <div class="about-us__img-wrapper">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="images/img/aboutus/tobacco.webp"
+                  />
+                  <img src="images/img/aboutus/tobacco.png" alt="tobacco" />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -785,7 +787,209 @@
           </div>
         </div>
       </section>
-      section.events>.container>.
+      <section class="events">
+        <div class="container">
+          <h2 class="events__title title">ИВЕНТЫ</h2>
+          <div class="events__slider">
+            <div class="events__slide">
+              <div class="slide-events__wrapper">
+                <div class="slide-events__img">
+                  <div class="slide-events__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/events/event.webp"
+                      />
+                      <img
+                        src="images/img/events/event.jpg"
+                        alt="event photo"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="slide-events__content">
+                  <h3 class="slide-events__title">КАЛЬЯННЫЙ день</h3>
+                  <div class="slide-events__date">10.10.2021</div>
+                  <p class="slide-events__text">
+                    Любишь кальян, посиделки с друзьями и хорошую компанию,
+                    тогда тебе обязательно нужно прийти к нам. Вечер кальяна и
+                    живой музыки сделает твой вечер незабываемым.
+                  </p>
+                  <div class="slide-events__btn btn">ПРИНЯТЬ УЧАСТИЕ</div>
+                </div>
+              </div>
+            </div>
+            <div class="events__slide">
+              <div class="slide-events__wrapper">
+                <div class="slide-events__img">
+                  <div class="slide-events__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/events/event.webp"
+                      />
+                      <img
+                        src="images/img/events/event.jpg"
+                        alt="event photo"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="slide-events__content">
+                  <h3 class="slide-events__title">КАЛЬЯННЫЙ день</h3>
+                  <div class="slide-events__date">10.10.2021</div>
+                  <p class="slide-events__text">Любишь кальян.</p>
+                  <div class="slide-events__btn btn">ПРИНЯТЬ УЧАСТИЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events__pagination slick-pagination"></div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="question__wrapper">
+            <h2 class="eventsq__title title">ВОПРОСЫ И ОТВЕТЫ</h2>
+            <div class="questions__accordion">
+              <div class="accordion__item">
+                <div class="accordion__header">1. Бонусная программа</div>
+                <div class="accordion__body">
+                  Главная особенность такого табака кроется в ингредиентах,
+                  которые входят в его состав. Производитель уделяет огромное
+                  внимание процессу производства, поэтому продукт состоит только
+                  из качественных табачных листьев, патоки, глицерина и
+                  исключительно натуральных ароматизаторов.
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">2. Из чего мы делаем?</div>
+                <div class="accordion__body">
+                  Главная особенность такого табака кроется в ингредиентах,
+                  которые входят в его состав. Производитель уделяет огромное
+                  внимание процессу производства, поэтому продукт состоит только
+                  из качественных табачных листьев, патоки, глицерина и
+                  исключительно натуральных ароматизаторов.
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">3. Где купить?</div>
+                <div class="accordion__body">
+                  Главная особенность такого табака кроется в ингредиентах,
+                  которые входят в его состав. Производитель уделяет огромное
+                  внимание процессу производства, поэтому продукт состоит только
+                  из качественных табачных листьев, патоки, глицерина и
+                  исключительно натуральных ароматизаторов.
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  4. Как ознакомиться дегустация
+                </div>
+                <div class="accordion__body">
+                  Главная особенность такого табака кроется в ингредиентах,
+                  которые входят в его состав. Производитель уделяет огромное
+                  внимание процессу производства, поэтому продукт состоит только
+                  из качественных табачных листьев, патоки, глицерина и
+                  исключительно натуральных ароматизаторов.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__wrapper">
+            <div class="contact-us__form">
+              <form action="#">
+                <h2 class="contact-us__title title">Связаться с Нами</h2>
+                <p class="contact-us__text">
+                  Хотите стать нашим партнером или остались вопросы заполните
+                  форму и мы свяжемся с Вами
+                </p>
+
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Имя*"
+                  required
+                />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Телефон*"
+                  required
+                />
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Компания*"
+                  required
+                />
+                <p class="contact-us__text-agree">
+                  Нажимая кнопку Отправить, я даю согласие на обработку
+                  персональных данных.
+                </p>
+                <p class="contact-us__text-error">
+                  Пожалуйста заполните все поля*
+                </p>
+
+                <input
+                  class="contact-us__btn btn"
+                  type="submit"
+                  value="ОТПРАВИТЬ"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seo">
+        <div class="container">
+          <div class="seo__wrapper">
+            <h2 class="seo__title title">
+              Лучший Табак для кальяна отменного качества
+            </h2>
+            <div class="seo__text">
+              <p>
+                Отличный итальянский табак появился на рынке совсем недавно.
+                Однако, за недолгий период своего существования, он уже успел
+                завоевать сердца любителей покурить кальян. Дымный и
+                натуральный, он способен окутать курильщика в восхитительную
+                волну необыкновенного аромата и оригинального послевкусия,
+                которое в любом случае будет хотеться ощутить еще раз.
+              </p>
+              <p>
+                Главная особенность такого табака кроется в ингредиентах,
+                которые входят в его состав. Производитель уделяет огромное
+                внимание процессу производства, поэтому продукт состоит только
+                из качественных табачных листьев, патоки, глицерина и
+                исключительно натуральных ароматизаторов.
+              </p>
+              <p>
+                Отличный итальянский табак появился на рынке совсем недавно.
+                Однако, за недолгий период своего существования, он уже успел
+                завоевать сердца любителей покурить кальян. Дымный и
+                натуральный, он способен окутать курильщика в восхитительную
+                волну необыкновенного аромата и оригинального послевкусия,
+                которое в любом случае будет хотеться ощутить еще раз.
+              </p>
+              <p>
+                Главная особенность такого табака кроется в ингредиентах,
+                которые входят в его состав. Производитель уделяет огромное
+                внимание процессу производства, поэтому продукт состоит только
+                из качественных табачных листьев, патоки, глицерина и
+                исключительно натуральных ароматизаторов.
+              </p>
+            </div>
+            <div class="seo__btn"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__top">
