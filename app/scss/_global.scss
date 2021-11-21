@@ -1,7 +1,9 @@
+html {
+  font-size: 20px;
+}
 html,
 body {
   height: 100%;
-  font-size: 20px;
   font-family: "Inter", sans-serif;
 }
 
@@ -41,25 +43,8 @@ a {
     }
   }
 }
-button,
-input,
-optgroup,
-select,
-textarea,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"],
-button[disabled],
-html input[disabled],
-button::-moz-focus-inner,
-input::-moz-focus-inner,
-input[type="checkbox"],
-input[type="radio"],
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button,
-input[type="search"],
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration .img-responsive {
+
+.img-responsive {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -87,6 +72,20 @@ h2 {
 }
 p {
   font-size: 0.8rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 }
 .title::before {
   content: "";
@@ -120,21 +119,43 @@ p {
   border: none;
   color: #fff;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    height: 48px;
+    max-width: 260px;
+  }
 
   &:hover {
     color: #fff;
     background-color: $violet-dark-color;
   }
 }
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+}
 
-input:not([type="submit"]) {
-  padding: 16px 20px 14px;
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]) {
+  padding: 13px 20px;
   border: 1px solid #fff;
   margin-top: 24px;
   border-radius: 4px;
   color: #fff;
   background-color: transparent;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 18px;
+    font-size: 0.7rem;
+    padding: 12px;
+  }
 
   &.error {
     border: 1px solid $red-color;
@@ -161,14 +182,19 @@ input:not([type="submit"]) {
   &-dots {
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 46px;
     left: calc(50% + 638px);
     transform: translateX(-100%);
 
     @media screen and (max-width: 1296px) {
       left: inherit;
-      right: 15px;
+      right: 10px;
       transform: none;
+    }
+    @media screen and (max-width: 768px) {
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 28px;
     }
     li {
       font-size: 0;
@@ -183,6 +209,14 @@ input:not([type="submit"]) {
       height: 4px;
       width: 60px;
       border-radius: 4px;
+
+      @media screen and (max-width: 768px) {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        position: absolute;
+        right: 200%;
+      }
     }
   }
   &-arrow {
@@ -190,7 +224,7 @@ input:not([type="submit"]) {
     background: none;
     border: none;
     position: absolute;
-    bottom: 70px;
+    bottom: 75px;
     width: 20px;
     height: 16px;
     background: url(../images/icon/arrow.svg) center no-repeat;
@@ -198,6 +232,10 @@ input:not([type="submit"]) {
     transform: translateX(-100%);
     z-index: 50;
     cursor: pointer;
+
+    @media screen and (max-width: 500px) {
+      bottom: 28px;
+    }
 
     &:hover {
       background-image: url(../images/icon/arrowviolet.svg);
@@ -241,14 +279,23 @@ input:not([type="submit"]) {
     font-weight: 600;
     line-height: 1.2rem;
     position: absolute;
-    bottom: 66px;
-    left: calc(50% + 546px);
+    bottom: 70px;
+    left: calc(50% + 555px);
     transform: translateX(-100%);
 
     @media screen and (max-width: 1296px) {
       left: inherit;
-      right: 174px;
+      right: 93px;
       transform: none;
+    }
+    @media screen and (max-width: 768px) {
+      left: 15px;
+      right: inherit;
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+    @media screen and (max-width: 500px) {
+      bottom: 23px;
     }
 
     span {
@@ -273,5 +320,35 @@ input:not([type="submit"]) {
   }
   .slick-pagination {
     color: $dark-color;
+  }
+}
+
+.breadcrumb {
+  margin: 27px 0 48px;
+  font-size: 0.6rem;
+  line-height: 0.75rem;
+  display: flex;
+
+  li {
+    position: relative;
+
+    & > span {
+      color: $orange-color;
+    }
+  }
+
+  li:not(:first-child) {
+    margin-left: 21px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -13px;
+      width: 4px;
+      height: 7px;
+      transform: translateY(-50%);
+      background: url(../images/icon/arrowleftblack2.svg) center no-repeat;
+    }
   }
 }

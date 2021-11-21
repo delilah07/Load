@@ -13,7 +13,12 @@ $(function () {
 
       let i = (currentSlide ? currentSlide : 0) + 1;
       $status.html(
-        "<span>" + i + "</span> / " + slick.$dots[0].children.length
+        "<span>" +
+          (i < 10 ? `0${i}` : i) +
+          "</span>/" +
+          (slick.$dots[0].children.length < 10
+            ? `0${slick.$dots[0].children.length}`
+            : slick.$dots[0].children.length)
       );
     }
   );
@@ -26,10 +31,10 @@ $(function () {
   });
 
   //taste slider
-  const $statusTastes = $(".tastes__pagination");
-  const $slickTastes = $(".tastes__slider");
+  const $statusflavors = $(".flavors__pagination");
+  const $slickflavors = $(".flavors__slider");
 
-  $slickTastes.on(
+  $slickflavors.on(
     "init reInit afterChange",
     function (event, slick, currentSlide, nextSlide) {
       //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
@@ -37,20 +42,26 @@ $(function () {
         return;
       }
       let SLIDES_TO_SHOW =
-        screen.width < 1024
-          ? 3
-          : screen.width < 768
-          ? 2
-          : screen.width < 400
+        screen.width <= 400
           ? 1
+          : screen.width <= 768
+          ? 2
+          : screen.width <= 1024
+          ? 3
           : 4;
       const page = Math.ceil(((currentSlide || 0) + 1) / SLIDES_TO_SHOW);
-      $statusTastes.html(
-        "<span>" + page + "</span> / " + slick.$dots[0].children.length
+      console.log(SLIDES_TO_SHOW);
+      $statusflavors.html(
+        "<span>" +
+          (page < 10 ? `0${page}` : page) +
+          "</span>/" +
+          (slick.$dots[0].children.length < 10
+            ? `0${slick.$dots[0].children.length}`
+            : slick.$dots[0].children.length)
       );
     }
   );
-  $slickTastes.slick({
+  $slickflavors.slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -97,10 +108,15 @@ $(function () {
       if (!slick.$dots) {
         return;
       }
-      let SLIDES_TO_SHOW = screen.width < 768 ? 2 : screen.width < 400 ? 1 : 3;
+      let SLIDES_TO_SHOW = screen.width <= 400 ? 1 : screen.width < 768 ? 2 : 3;
       const page = Math.ceil(((currentSlide || 0) + 1) / SLIDES_TO_SHOW);
       $statusVideoReviews.html(
-        "<span>" + page + "</span> / " + slick.$dots[0].children.length
+        "<span>" +
+          (page < 10 ? `0${page}` : page) +
+          "</span>/" +
+          (slick.$dots[0].children.length < 10
+            ? `0${slick.$dots[0].children.length}`
+            : slick.$dots[0].children.length)
       );
     }
   );
@@ -111,10 +127,16 @@ $(function () {
       if (!slick.$dots) {
         return;
       }
-      let SLIDES_TO_SHOW = screen.width < 768 ? 2 : screen.width < 400 ? 1 : 3;
+      let SLIDES_TO_SHOW =
+        screen.width <= 400 ? 1 : screen.width <= 768 ? 2 : 3;
       const page = Math.ceil(((currentSlide || 0) + 1) / SLIDES_TO_SHOW);
       $statusLetterReviews.html(
-        "<span>" + page + "</span> / " + slick.$dots[0].children.length
+        "<span>" +
+          (page < 10 ? `0${page}` : page) +
+          "</span>/" +
+          (slick.$dots[0].children.length < 10
+            ? `0${slick.$dots[0].children.length}`
+            : slick.$dots[0].children.length)
       );
     }
   );
@@ -171,7 +193,12 @@ $(function () {
 
       let i = (currentSlide ? currentSlide : 0) + 1;
       $statusEvents.html(
-        "<span>" + i + "</span> / " + slick.$dots[0].children.length
+        "<span>" +
+          (i < 10 ? `0${i}` : i) +
+          "</span>/" +
+          (slick.$dots[0].children.length < 10
+            ? `0${slick.$dots[0].children.length}`
+            : slick.$dots[0].children.length)
       );
     }
   );
@@ -203,7 +230,6 @@ $(function () {
     const inputs = $(".contact-us__form input:not([type='submit'])");
     if (inputs.val() === "") {
       console.log("erroe");
-      inputs.css("border", "2px solid red");
       inputs.addClass("error");
       $(".contact-us__text-error").css("opacity", "1");
     }
@@ -214,4 +240,47 @@ $(function () {
   $(".seo__btn").on("click", () => {
     $(".seo__wrapper").toggleClass("hidden");
   });
+
+  if (screen.width <= 768) {
+    // advantages slider
+
+    const $statusAdvantages = $(".advantages__pagination");
+    const $slickAdvantages = $(".advantages__list");
+
+    $slickAdvantages.on(
+      "init reInit afterChange",
+      function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        if (!slick.$dots) {
+          return;
+        }
+        let SLIDES_TO_SHOW = screen.width <= 400 ? 2 : 3;
+        const page = Math.ceil(((currentSlide || 0) + 1) / SLIDES_TO_SHOW);
+        $statusAdvantages.html(
+          "<span>" +
+            (page < 10 ? `0${page}` : page) +
+            "</span>/" +
+            (slick.$dots[0].children.length < 10
+              ? `0${slick.$dots[0].children.length}`
+              : slick.$dots[0].children.length)
+        );
+      }
+    );
+    $slickAdvantages.slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: true,
+      arrow: true,
+      responsive: [
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+      ],
+    });
+  }
 });
