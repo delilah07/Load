@@ -229,9 +229,26 @@ $(function () {
     $(".contact-us__text-error").css("opacity", "0");
     const inputs = $(".contact-us__form input:not([type='submit'])");
     if (inputs.val() === "") {
-      console.log("erroe");
       inputs.addClass("error");
       $(".contact-us__text-error").css("opacity", "1");
+    }
+  });
+  $(".subscribe__btn").on("click", function () {
+    $(".subscribe__text-error").css("opacity", "0");
+    const inputs = $(".subscribe__form input:not([type='submit'])");
+    if (inputs.val() === "") {
+      inputs.addClass("error");
+      $(".subscribe__text-error").css("opacity", "1");
+    }
+  });
+  $(".identity__btn").on("click", function () {
+    $(".identity__text-error").css("opacity", "0");
+    const inputs = $(".identity__form input:not([type='submit'])");
+    const select = $(".identity__form .dropdown");
+    if (inputs.val() === "") {
+      inputs.addClass("error");
+      select.addClass("error");
+      $(".identity__text-error").css("opacity", "1");
     }
   });
 
@@ -246,6 +263,7 @@ $(function () {
 
     const $statusAdvantages = $(".advantages__pagination");
     const $slickAdvantages = $(".advantages__list");
+    $statusAdvantages.slick("setPosition");
 
     $slickAdvantages.on(
       "init reInit afterChange",
@@ -283,4 +301,53 @@ $(function () {
       ],
     });
   }
+
+  //quantity btn
+
+  $(".product__qty").each(function () {
+    const spinner = $(this),
+      input = spinner.find(".product__qty-input"),
+      btnUp = spinner.find(".product__qty-plus"),
+      btnDown = spinner.find(".product__qty-minus"),
+      min = input.attr("min");
+
+    btnUp.on("click", () => {
+      let oldValue = parseFloat(input.val());
+      let newValue = oldValue;
+      newValue++;
+      spinner.find("input").val(newValue);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.on("click", () => {
+      let oldValue = parseFloat(input.val());
+      let newValue = oldValue;
+      oldValue <= min ? (newValue = oldValue) : newValue--;
+      spinner.find("input").val(newValue);
+      spinner.find("input").trigger("change");
+    });
+  });
+
+  /*Dropdown Menu*/
+  $(".dropdown").each(function () {
+    const dropdown = $(this);
+    const dropdownlist = dropdown.find(".dropdown-menu li");
+    dropdown.click(function () {
+      $(this).attr("tabindex", 1).focus();
+      $(this).toggleClass("active");
+      $(this).find(".dropdown-menu").slideToggle(300);
+    });
+    dropdown.focusout(function () {
+      $(this).removeClass("active");
+      $(this).find(".dropdown-menu").slideUp(300);
+    });
+    dropdownlist.click(function () {
+      $(this).parents(".dropdown").find("span").text($(this).text());
+      $(this).parents(".dropdown").find("span").addClass("black");
+      $(this)
+        .parents(".dropdown")
+        .find("input")
+        .attr("value", $(this).attr("id"));
+    });
+  });
 });

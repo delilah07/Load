@@ -28,7 +28,7 @@
             <nav class="header__nav">
               <ul class="nav-header__list">
                 <li class="nav-header__item">
-                  <a href="#" class="item-nav__link">Каталог</a>
+                  <a href="catalog.html" class="item-nav__link">Каталог</a>
                 </li>
                 <li class="nav-header__item">
                   <a href="#" class="item-nav__link">Контакты</a>
@@ -125,11 +125,13 @@
               </div>
             </aside>
             <div class="catalog__content">
-              <div class="product__list">
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+              <div class="product-card__list">
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                         media="(max-width:768px)"
                         srcset="images/img/catalog/blueberry-mob.webp"
                         width="80"
@@ -141,45 +143,66 @@
                         width="80"
                         height="80"
                       /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/blueberry.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/blueberry.jpg"
-                        alt="blueberry flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/blueberry.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/blueberry.jpg"
+                            alt="blueberry flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.html">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/cola-mob.webp"
                           width="80"
@@ -191,45 +214,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/cola.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/cola.jpg"
-                        alt="cola flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/cola.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/cola.jpg"
+                            alt="cola flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/currant-mob.webp"
                           width="80"
@@ -241,45 +284,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/currant.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/currant.jpg"
-                        alt="currant flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/currant.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/currant.jpg"
+                            alt="currant flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/eazypeach-mob.webp"
                           width="80"
@@ -291,45 +354,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/eazypeach.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/eazypeach.jpg"
-                        alt="eazypeach flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/eazypeach.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/eazypeach.jpg"
+                            alt="eazypeach flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/goa-mob.webp"
                           width="80"
@@ -341,45 +424,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/goa.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/goa.jpg"
-                        alt="goa flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/goa.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/goa.jpg"
+                            alt="goa flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/grapefruit-mob.webp"
                           width="80"
@@ -391,45 +494,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/grapefruit.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/grapefruit.jpg"
-                        alt="grapefruit flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/grapefruit.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/grapefruit.jpg"
+                            alt="grapefruit flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.htmlml">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/greendrink-mob.webp"
                           width="80"
@@ -441,45 +564,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/greendrink.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/greendrink.jpg"
-                        alt="greendrink flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/greendrink.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/greendrink.jpg"
+                            alt="greendrink flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/jungleboom-mob.webp"
                           width="80"
@@ -491,45 +634,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/jungleboom.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/jungleboom.jpg"
-                        alt="jungleboom flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/jungleboom.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/jungleboom.jpg"
+                            alt="jungleboom flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/lemon-mob.webp"
                           width="80"
@@ -541,45 +704,65 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/lemon.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/lemon.jpg"
-                        alt="lemon flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/lemon.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/lemon.jpg"
+                            alt="lemon flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
-                <div class="product__item">
-                  <div class="product__img">
-                    <picture>
-                      <!-- <source
+                <div class="product-card__item">
+                  <div class="product-card__item-wrapper">
+                    <div class="product-card__img">
+                      <a href="product.htmlml">
+                        <picture>
+                          <!-- <source
                           media="(max-width:768px)"
                           srcset="images/img/catalog/mango-mob.webp"
                           width="80"
@@ -591,45 +774,63 @@
                           width="80"
                           height="80"
                         /> -->
-                      <source
-                        type="image/webp"
-                        srcset="images/img/catalog/mango.webp"
-                        width="200"
-                        height="200"
-                      />
-                      <img
-                        class="img-responsive"
-                        src="images/img/catalog/mango.jpg"
-                        alt="blueberry flavor"
-                        width="200"
-                        height="200"
-                      />
-                    </picture>
-                  </div>
-                  <div class="product__description-wrapper">
-                    <h3 class="product__title">WATERMELON FLAVOR</h3>
-                    <div class="product__form">Форма:</div>
-                    <div class="product__description">
-                      Яркое сочетание самых популярных цитрусовых и фруктов. В
-                      нем гармонично соединяются грейпфрут, лайм и маракуйя.
-                      Восхитительный микс отличается приятной кислинкой, нежной
-                      сладостью и потрясающим ароматом.
+                          <source
+                            type="image/webp"
+                            srcset="images/img/catalog/mango.webp"
+                            width="200"
+                            height="200"
+                          />
+                          <img
+                            class="img-responsive"
+                            src="images/img/catalog/mango.jpg"
+                            alt="blueberry flavor"
+                            width="200"
+                            height="200"
+                          />
+                        </picture>
+                      </a>
                     </div>
-                  </div>
-                  <div class="product__btn">
-                    <div class="product__price">1000 грн.</div>
-                    <div class="product__qty">
-                      <div class="product__qty-minus"></div>
-                      <input type="number" />
-                      <div class="product__qty-plus"></div>
+                    <div class="product-card__description-wrapper">
+                      <h3 class="product-card__title">
+                        <a href="product.html">WATERMELON FLAVOR</a>
+                      </h3>
+                      <div class="product-card__form">
+                        Форма: <span>1</span>
+                      </div>
+                      <div class="product-card__description">
+                        Яркое сочетание самых популярных цитрусовых и фруктов. В
+                        нем гармонично соединяются грейпфрут, лайм и маракуйя.
+                        Восхитительный микс отличается приятной кислинкой,
+                        нежной сладостью и потрясающим ароматом.
+                      </div>
                     </div>
-                    <button class="product__buy btn">+ КОРЗИНУ</button>
+                    <div class="product-card__btns">
+                      <div class="product-card__price">1000 грн.</div>
+                      <div class="product-card__qty">
+                        <div class="product-card__qty-minus">
+                          <img
+                            src="../images/icon/minus.svg"
+                            alt="minus icon"
+                          />
+                        </div>
+                        <input
+                          class="product-card__qty-input"
+                          type="number"
+                          min="0"
+                          value="1"
+                        />
+                        <div class="product-card__qty-plus">
+                          <img src="../images/icon/plus.svg" alt="plus icon" />
+                        </div>
+                      </div>
+                      <button class="product-card__buy btn">+ КОРЗИНУ</button>
+                    </div>
                   </div>
                 </div>
               </div>
               <ul class="pagination">
-                <li class="pagination__left">
-                  <a href="#"><span class="arrow-left"></span></a>
+                <li class="pagination__left pagination__arrow">
+                  <a href="#"></a>
                 </li>
                 <li class="pagination__item">
                   <a href="#">1</a>
@@ -638,54 +839,55 @@
                 <li class="pagination__item">
                   <a href="#">3</a>
                 </li>
-                <li class="pagination__right">
-                  <a href="#"><span class="arrow-right"></span></a>
+                <li class="pagination__right pagination__arrow">
+                  <a href="#"></a>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="subscribe">
-          <div class="container">
-            <form action="" class="subscribe__form">
-              <h2 class="subscribe__title title"></h2>
-              <p class="subscribe__text"></p>
-              <div class="subscribe__row">
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Имя*"
-                  required
-                />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Телефон*"
-                  required
-                />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email*"
-                  required
-                />
-                <p class="subscribe__text-error">
-                  Пожалуйста заполните все поля*
-                </p>
-
-                <input
-                  class="subscribe__btn btn"
-                  type="submit"
-                  value="ОТПРАВИТЬ"
-                />
-              </div>
-            </form>
-          </div>
-        </section>
       </div>
+      <section class="subscribe">
+        <div class="container">
+          <form action="" class="subscribe__form">
+            <h2 class="subscribe__title title">Подпишись</h2>
+            <p class="subscribe__text">
+              Подпишитесь, чтобы получать последние новости об акциях, новинках
+              и многом другом
+            </p>
+            <div class="subscribe__row">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Имя*"
+                required
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Телефон*"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+
+              <input
+                class="subscribe__btn btn"
+                type="submit"
+                value="ПОДПИСАТЬСЯ"
+              />
+            </div>
+            <p class="subscribe__text-error">Пожалуйста заполните все поля*</p>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__middle">
