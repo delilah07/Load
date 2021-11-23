@@ -309,7 +309,7 @@
     font-weight: normal;
     font-size: 0.75rem;
     line-height: 1.2rem;
-    margin-top: 30px;
+    margin-top: 32px;
 
     @media screen and (max-width: 768px) {
       font-size: 0.7rem;
@@ -566,7 +566,7 @@
 .about-us {
   background: url(../images/img/aboutus/background.jpg) center no-repeat;
   background-size: cover;
-  padding: 88px 0 56px;
+  padding: 88px 0 60px;
   color: #fff;
 
   @media screen and (max-width: 768px) {
@@ -587,8 +587,8 @@
     margin: 32px 0 44px;
     max-width: 585px;
     width: 100%;
-    font-size: 0.65rem;
-    line-height: 1.1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 
     @media screen and (max-width: 768px) {
       margin: 0 0 34px;
@@ -730,7 +730,7 @@
 
 // reviews section
 .reviews {
-  padding: 83px 0;
+  padding: 83px 0 88px;
   overflow-y: hidden;
 
   @media screen and (max-width: 768px) {
@@ -819,7 +819,7 @@
     }
   }
   &__body {
-    margin-top: 45px;
+    margin-top: 20px;
     overflow: hidden;
   }
   &__body-wrapper {
@@ -1162,7 +1162,7 @@
     transform: rotate(180deg) translateY(50%);
   }
   &__item + &__item {
-    margin-top: 16px;
+    margin-top: 20px;
   }
   &__header {
     font-weight: 500;
@@ -1199,8 +1199,8 @@
   }
   &__body {
     padding: 12px 20px;
-    font-size: 0.6rem;
-    line-height: 1.1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-top: none;
 
@@ -1253,9 +1253,10 @@
   }
 
   &__text {
-    margin-top: 35px;
+    margin-top: 29px;
     max-width: 435px;
     width: 100%;
+    line-height: 1.2rem;
 
     @media screen and (max-width: 768px) {
       margin: 20px 10px 0;
@@ -1281,13 +1282,13 @@
     }
   }
   &__btn {
-    margin: 25px auto 0;
+    margin: 25px 0 0;
   }
 }
 
 // seo section
 .seo {
-  padding: 100px 0 67px;
+  padding: 100px 0 70px;
   background: url(../images/img/leaf2.png) right calc(50% - 586px) bottom 94px
     no-repeat;
   background-size: 153px 105px;
@@ -1525,11 +1526,12 @@
     display: flex;
     padding: 17px 35px 35px 0;
     align-items: center;
-    justify-content: space-between;
+    gap: 32px;
 
     @media screen and (max-width: 768px) {
       padding: 20px 17px 29px;
       flex-direction: column;
+      gap: 0;
 
       &::before,
       &::after {
@@ -1557,7 +1559,6 @@
   &__img {
     width: 200px;
     height: 200px;
-    margin-right: 30px;
     flex: 0 0 200px;
 
     @media screen and (max-width: 1000px) {
@@ -1573,7 +1574,7 @@
     }
   }
   &__item + &__item {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   &__title {
@@ -1601,7 +1602,7 @@
       font-size: 0.7rem;
       line-height: 0.85rem;
       right: 0;
-      bottom: -40px;
+      bottom: -34px;
     }
   }
   &__description {
@@ -1617,7 +1618,7 @@
     }
   }
   &__description-wrapper {
-    margin-right: 30px;
+    margin-right: 90px;
     max-width: 505px;
 
     @media screen and (max-width: 768px) {
@@ -1634,12 +1635,13 @@
     height: 100%;
 
     @media screen and (max-width: 768px) {
-      margin-top: 11px;
+      margin-top: 7px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 46px) 1px;
       justify-content: space-between;
       width: 100%;
-      grid-gap: 23px;
+      grid-gap: 0 23px;
     }
   }
   &__price {
@@ -1673,7 +1675,7 @@
     margin: 25px -10px 45px;
 
     @media screen and (max-width: 768px) {
-      margin: 0;
+      margin: 0 0 0 -10px;
     }
 
     &-minus,
@@ -1741,17 +1743,18 @@
   }
 }
 .subscribe {
-  margin: 90px 0 60px;
+  margin: 72px 0 60px;
   background: url(../images/img/catalog/signbackground.jpg) left center
     no-repeat;
   background-size: cover;
-  padding: 60px 0;
+  padding: 60px 0 33px;
   color: #fff;
   position: relative;
 
   @media screen and (max-width: 768px) {
     background-image: url(../images/img/catalog/signbackground-mob.jpg);
     padding: 40px 0;
+    margin: 48px 0 55px;
   }
   &__title,
   &__text {
@@ -1761,8 +1764,22 @@
   &__title::before {
     display: none;
   }
+  &__title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+  }
   &__text {
     margin-top: 23px;
+    @media screen and (max-width: 768px) {
+      margin: 23px 20px;
+    }
   }
   &__row {
     display: grid;
@@ -1771,6 +1788,7 @@
     margin: 24px 0 5px;
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
+      margin: 31px 0 5px;
     }
 
     input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]) {
@@ -1810,24 +1828,27 @@
     }
   }
   &__content {
-    background: url(../images/img/leaf2.png) right bottom no-repeat;
+    background: url(../images/img/leaf2.png) right bottom 30px no-repeat;
     background-size: 153px 105px;
     padding-bottom: 100px;
+    margin-top: -8px;
 
     @media screen and (max-width: 768px) {
       background: none;
       padding-bottom: 0;
+      padding-top: 14px;
     }
   }
   &__img {
-    max-width: 558px;
+    max-width: 536px;
     width: 100%;
     background: url(../images/img/leafbackground.png) center no-repeat;
     background-size: contain;
-    margin: 10px;
+    margin: 34px 10px;
 
     @media screen and (max-width: 768px) {
-      margin: 0 30px;
+      margin: 7px 0 0;
+      padding: 0 30px;
     }
 
     img {
@@ -1847,6 +1868,7 @@
     @media screen and (max-width: 768px) {
       font-size: 0.7rem;
       line-height: 0.85rem;
+      margin-top: 17px;
     }
   }
   &__price {
@@ -1863,7 +1885,7 @@
   }
 
   &__back {
-    margin: 60px auto 0;
+    margin: 38px auto 0;
 
     @media screen and (max-width: 768px) {
       margin: 30px auto 0;
@@ -1887,11 +1909,12 @@
 
   &__btns {
     display: flex;
-    margin: 28px -10px;
+    margin: -25px -10px 15px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-items: center;
+      margin: 23px -10px 15px;
     }
 
     button {
@@ -1899,7 +1922,13 @@
     }
   }
   &__description {
-    margin-top: 26px;
+    margin-top: 18px;
+    max-width: 600px;
+    line-height: 1.2rem;
+    @media screen and (max-width: 768px) {
+      margin-top: 29px;
+      line-height: 1.3rem;
+    }
   }
 }
 .strength-product {
@@ -1966,7 +1995,7 @@
 .table-order {
   &__row {
     display: grid;
-    padding-left: 20px;
+    padding-left: 33px;
     border-bottom: 1px solid #e5e5e5;
     grid-template-columns: 100px 1.5fr repeat(3, 1fr) 100px;
     grid-gap: 40px;
@@ -1997,7 +2026,7 @@
     padding-bottom: 13px;
   }
   &__body &__row {
-    padding: 24px 0 24px 20px;
+    padding: 24px 0 24px 33px;
   }
   &__footer {
     margin-top: 20px;
@@ -2063,9 +2092,12 @@
     }
     &__footer &__row {
       grid-template-columns: repeat(2, 1fr);
+      padding: 7px 0;
+    }
+    &__footer &__row:nth-child(1),
+    &__footer &__row:nth-child(2) {
       font-size: 0.7rem;
       line-height: 0.85rem;
-      padding-left: 0;
     }
     &__img,
     &__cansel-wrapper {
@@ -2077,11 +2109,15 @@
     &__cansel-wrapper {
       grid-column: 3 / 4;
     }
+    &__qty {
+      margin-left: -10px;
+    }
   }
   @media screen and (max-width: 500px) {
     &__body &__row {
       grid-template-columns: 80px 1fr 30px;
       grid-gap: 5px 14px;
+      padding: 13px 0;
     }
     &__cansel {
       width: 18px;
@@ -2091,13 +2127,10 @@
       width: 80px;
       height: 80px;
     }
-    &__body &__row {
-      padding: 20px 0;
-    }
   }
 }
 .identity {
-  margin: 90px 0;
+  margin: 86px 0 90px;
   background: url(../images/img/cartbackground.jpg) center no-repeat;
   background-size: cover;
   padding: 60px;
@@ -2105,7 +2138,7 @@
 
   @media screen and (max-width: 768px) {
     background-image: url(../images/img/cartbackgroundmob.jpg);
-    margin: 55px -10px;
+    margin: 46px -10px 55px;
     padding: 30px;
   }
 
@@ -2114,6 +2147,7 @@
     display: flex;
     @media screen and (max-width: 768px) {
       flex-wrap: wrap;
+      font-size: 0.8rem;
     }
 
     & > span {
@@ -2169,14 +2203,14 @@
     }
   }
   &__input-content {
-    margin-top: 38px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 36px;
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
-      margin-top: 30px;
+      margin-top: 4px;
       grid-gap: 0;
     }
 
@@ -2217,9 +2251,9 @@
   }
 
   &__btn {
-    margin: 30px auto 0;
+    margin: 7px auto 0;
     @media screen and (max-width: 768px) {
-      margin: 10px auto 0;
+      margin: 7px auto 0;
     }
   }
   &__text-error {
@@ -2293,8 +2327,8 @@
   &__icon {
     border-radius: 50%;
     border: 4px solid rgba(74, 32, 140, 0.5);
-    width: 86px;
-    height: 86px;
+    width: 96px;
+    height: 96px;
     margin-right: 20px;
 
     @media screen and (max-width: 768px) {
@@ -2331,11 +2365,13 @@
     display: flex;
     margin-bottom: 95px;
     align-items: stretch;
+    margin-top: 60px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 55px;
       margin-bottom: 50px;
+      margin-top: 30px;
     }
   }
   &__title {
@@ -2369,6 +2405,12 @@
     color: #cdcdcd;
   }
   &__inputs {
+    margin-top: 15px;
+
+    @media screen and (max-screen: 768px) {
+      margin-top: 9px;
+    }
+
     input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]) {
       background-color: #fff;
       font-weight: 500;
@@ -2401,6 +2443,16 @@
 
   &__col {
     flex: 1 1 50%;
+
+    .form__title {
+      font-size: 1.7rem;
+      line-height: 2.05rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+    }
   }
   &__btn {
     margin: 20px auto 0;
@@ -2435,7 +2487,8 @@
   }
 
   &__text {
-    margin: 25px 0 30px;
+    margin: 20px 0 30px;
+    line-height: 1.2rem;
   }
 }
 

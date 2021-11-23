@@ -158,7 +158,7 @@ input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
 textarea {
   padding: 13px 20px;
   border: 1px solid #fff;
-  margin-top: 24px;
+  margin-top: 26px;
   border-radius: 4px;
   color: #fff;
   background-color: transparent;
@@ -265,7 +265,7 @@ textarea {
     }
 
     &:hover {
-      transform: translateX(-100%);
+      transform: translateX(-100%) rotate(180deg);
 
       @media screen and (max-width: 1296px) {
         transform: none;
@@ -280,10 +280,10 @@ textarea {
       right: 32px;
     }
     &:hover {
-      transform: translateX(-100%) rotate(180deg);
+      transform: translateX(-100%);
 
       @media screen and (max-width: 1296px) {
-        transform: translateX(-100%) rotate(180deg);
+        transform: translateX(-100%);
       }
     }
   }
@@ -378,11 +378,15 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 21px 0;
+  margin: 12px 0;
+
+  @media screen and (max-width: 768px) {
+    margin: 26px 0 0;
+  }
 
   &__arrow {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     background: url(../images/icon/arrowblack.svg) center no-repeat;
     background-size: contain;
     cursor: pointer;

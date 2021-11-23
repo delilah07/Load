@@ -275,7 +275,6 @@ $(function () {
 
     const $statusAdvantages = $(".advantages__pagination");
     const $slickAdvantages = $(".advantages__list");
-    $statusAdvantages.slick("setPosition");
 
     $slickAdvantages.on(
       "init reInit afterChange",
