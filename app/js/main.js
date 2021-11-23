@@ -23,6 +23,7 @@ $(function () {
     }
   );
   $slickElement.slick({
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -62,6 +63,7 @@ $(function () {
     }
   );
   $slickflavors.slick({
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -141,6 +143,7 @@ $(function () {
     }
   );
   $slickReviews.slick({
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -203,6 +206,7 @@ $(function () {
     }
   );
   $slickEvents.slick({
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -293,6 +297,7 @@ $(function () {
       }
     );
     $slickAdvantages.slick({
+      lazyLoad: "ondemand",
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 3,
