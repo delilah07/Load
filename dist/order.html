@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/icon/leaf.svg" />
+    <title>LOUD</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source type="image/webp" srcset="images/img/logo.webp" />
+                <img
+                  src="images/img/logo.png"
+                  alt="logo"
+                  height="82"
+                  width="210"
+                />
+              </picture>
+            </a>
+            <nav class="header__nav">
+              <ul class="nav-header__list">
+                <li class="nav-header__item">
+                  <a href="catalog.html" class="item-nav__link">Каталог</a>
+                </li>
+                <li class="nav-header__item">
+                  <a href="#" class="item-nav__link">Контакты</a>
+                </li>
+                <li class="nav-header__item">
+                  <a href="#" class="item-nav__link">О нас</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__regist">
+              <ul class="regist-header__list">
+                <li class="regist-header__item">
+                  <a href="#" class="regist-header__link">Вход</a>
+                </li>
+                <li class="regist-header__item">
+                  <a href="#" class="regist-header__link">Регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="header__lang">
+              <ul class="lang-header__list">
+                <li class="lang-header__item">
+                  <a href="" class="lang-header__link">UA</a>
+                </li>
+                <li class="lang-header__item">
+                  <span class="lang-header__span">RUS</span>
+                </li>
+              </ul>
+            </div>
+            <div class="header__cart">
+              <a href="#" class="cart-header__link">
+                <img
+                  src="images/icon/shopping-basket1.svg"
+                  alt="cart icon"
+                  class="cart-header__icon"
+                  width="23"
+                  height="23"
+                />
+                <span class="cart-header__sum">1000 грн.</span>
+                <div class="cart-header__num">10</div>
+              </a>
+            </div>
+            <div class="header__burger">
+              <div class="burger-header__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li>
+            <a href="index.html"><span>Главная</span></a>
+          </li>
+          <li><span>Корзина</span></li>
+        </ul>
+        <section class="order">
+          <div class="order__wrapper">
+            <h1 class="order__title title">КОРЗИНА</h1>
+            <div class="order__table">
+              <div class="table-order__head">
+                <div class="table-order__row">
+                  <div></div>
+                  <div>ТоВАР</div>
+                  <div>ЦЕНА</div>
+                  <div>КОЛ-ВО</div>
+                  <div>СумМА</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="table-order__body">
+                <div class="table-order__row">
+                  <a class="table-order__img" href="product.html">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/catalog/cola.webp"
+                        width="100"
+                        height="100"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/catalog/cola.jpg"
+                        alt="cola flavor"
+                        width="100"
+                        height="100"
+                      />
+                    </picture>
+                  </a>
+
+                  <a class="table-order__title" href="product.html"
+                    >WATERMELON FLAVOR</a
+                  >
+
+                  <div class="table-order__price">1000 грн.</div>
+
+                  <div class="table-order__qty product-card__qty">
+                    <div class="product-card__qty-minus">
+                      <img src="../images/icon/minus.svg" alt="minus icon" />
+                    </div>
+                    <input
+                      class="product-card__qty-input"
+                      type="number"
+                      min="0"
+                      value="1"
+                    />
+                    <div class="product-card__qty-plus">
+                      <img src="../images/icon/plus.svg" alt="plus icon" />
+                    </div>
+                  </div>
+
+                  <div class="table-order__sum">1000 грн.</div>
+                  <div class="table-order__cansel-wrapper">
+                    <div class="table-order__cansel"></div>
+                  </div>
+                </div>
+                <div class="table-order__row">
+                  <a class="table-order__img" href="product.html">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/catalog/cola.webp"
+                        width="100"
+                        height="100"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/catalog/cola.jpg"
+                        alt="cola flavor"
+                        width="100"
+                        height="100"
+                      />
+                    </picture>
+                  </a>
+
+                  <a class="table-order__title" href="product.html"
+                    >WATERMELON FLAVOR</a
+                  >
+
+                  <div class="table-order__price">1000 грн.</div>
+
+                  <div class="table-order__qty product-card__qty">
+                    <div class="product-card__qty-minus">
+                      <img src="../images/icon/minus.svg" alt="minus icon" />
+                    </div>
+                    <input
+                      class="product-card__qty-input"
+                      type="number"
+                      min="0"
+                      value="1"
+                    />
+                    <div class="product-card__qty-plus">
+                      <img src="../images/icon/plus.svg" alt="plus icon" />
+                    </div>
+                  </div>
+
+                  <div class="table-order__sum">1000 грн.</div>
+                  <div class="table-order__cansel-wrapper">
+                    <div class="table-order__cansel"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-order__footer">
+                <div class="table-order__row">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div>Сумма заказа:</div>
+                  <div>2000 грн.</div>
+                  <div></div>
+                </div>
+                <div class="table-order__row">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div>Доставка:</div>
+                  <div>50 грн.</div>
+                  <div></div>
+                </div>
+                <div class="table-order__row">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div>ВСЕГО:</div>
+                  <div>2050 грн.</div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="identity">
+          <div class="identity__wrapper">
+            <form action="" class="identity__form">
+              <h2 class="identity__title title">ЛиЧНЫЕ ДАННЫЕ</h2>
+              <div class="identity__choose-form">
+                <span>ВЫБЕРИТЕ ФОРМУ: </span>
+                <label for="form1" class="identity__label">
+                  <input
+                    type="radio"
+                    name="choose-form"
+                    id="form1"
+                    value=""
+                    class="identity__input"
+                    autocomplete="off"
+                    checked
+                  />
+                  <span>1 форма</span>
+                </label>
+                <label for="form2" class="identity__label">
+                  <input
+                    type="radio"
+                    name="choose-form"
+                    id="form2"
+                    value=""
+                    class="identity__input"
+                    autocomplete="off"
+                  />
+                  <span>2 форма</span>
+                </label>
+              </div>
+              <div class="identity__input-content">
+                <div class="identity__input-row">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Имя*"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email*"
+                    required
+                  />
+                  <div class="identity__dropdown dropdown">
+                    <div class="select select-delivery">
+                      <span>Выберите доставку</span>
+                    </div>
+                    <input type="hidden" name="delivery" />
+                    <ul class="dropdown-menu">
+                      <li id="">Доставка Новой Почтой</li>
+                      <li id="">Самовывоз</li>
+                    </ul>
+                  </div>
+                  <textarea
+                    name=""
+                    id=""
+                    cols=""
+                    rows=""
+                    placeholder="Коментарий к заказу"
+                  ></textarea>
+                </div>
+                <div class="indentity__input-row">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон*"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Фамилия*"
+                    required
+                  />
+                  <div class="identity__dropdown dropdown">
+                    <div class="select select-payment">
+                      <span>Выберите доставку</span>
+                    </div>
+                    <input type="hidden" name="payment" />
+                    <ul class="dropdown-menu">
+                      <li id="">Оплата наложенным платежом</li>
+                      <li id="">Оплата наличніми</li>
+                    </ul>
+                  </div>
+                  <input
+                    type="text"
+                    id=""
+                    name=""
+                    placeholder="Номер отделения НП*"
+                    required
+                  />
+                </div>
+              </div>
+              <p class="identity__text-error">Пожалуйста заполните все поля*</p>
+              <input
+                class="identity__btn btn"
+                type="submit"
+                value="ОФОРМИТЬ ЗАКАЗ"
+              />
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__middle">
+        <div class="container">
+          <div class="footer__wrapper">
+            <a href="index.html" class="footer__logo">
+              <picture>
+                <source type="image/webp" srcset="images/img/logo.webp" />
+                <img
+                  src="images/img/logo.png"
+                  alt="logo"
+                  height="82"
+                  width="210"
+                />
+              </picture>
+            </a>
+            <div class="footer__socials">
+              <div class="socials-footer__text">Подписывайтесь на нас:</div>
+              <ul class="socials-footer__list">
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/facebook.svg"
+                      alt="facebook icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/instagram.svg"
+                      alt="instagram icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/viber.svg"
+                      alt="viber icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/telegram.svg"
+                      alt="telegram icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div><span>LOUD </span>© Все права защищены 2021</div>
+            <noindex class="footer__agency">
+              <a href="https://geniustudio.net" target="_blank">
+                <img
+                  src="images/icon/logo_geniustudio.svg"
+                  alt="geniustudio logo"
+                />
+              </a>
+            </noindex>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

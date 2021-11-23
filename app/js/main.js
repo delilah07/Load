@@ -251,6 +251,14 @@ $(function () {
       $(".identity__text-error").css("opacity", "1");
     }
   });
+  $(".form__btn").on("click", function () {
+    $(".form__text-error").css("opacity", "0");
+    const inputs = $(".form__inputs input:not([type='submit'])");
+    if (inputs.val() === "") {
+      inputs.addClass("error");
+      $(".form__text-error").css("opacity", "1");
+    }
+  });
 
   // seo
   $(".seo__wrapper").addClass("hidden");
@@ -304,11 +312,11 @@ $(function () {
 
   //quantity btn
 
-  $(".product__qty").each(function () {
+  $(".product-card__qty").each(function () {
     const spinner = $(this),
-      input = spinner.find(".product__qty-input"),
-      btnUp = spinner.find(".product__qty-plus"),
-      btnDown = spinner.find(".product__qty-minus"),
+      input = spinner.find(".product-card__qty-input"),
+      btnUp = spinner.find(".product-card__qty-plus"),
+      btnDown = spinner.find(".product-card__qty-minus"),
       min = input.attr("min");
 
     btnUp.on("click", () => {

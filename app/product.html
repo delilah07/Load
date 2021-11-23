@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/icon/leaf.svg" />
+    <title>LOUD</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source type="image/webp" srcset="images/img/logo.webp" />
+                <img
+                  src="images/img/logo.png"
+                  alt="logo"
+                  height="82"
+                  width="210"
+                />
+              </picture>
+            </a>
+            <nav class="header__nav">
+              <ul class="nav-header__list">
+                <li class="nav-header__item">
+                  <a href="catalog.html" class="item-nav__link">Каталог</a>
+                </li>
+                <li class="nav-header__item">
+                  <a href="#" class="item-nav__link">Контакты</a>
+                </li>
+                <li class="nav-header__item">
+                  <a href="#" class="item-nav__link">О нас</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__regist">
+              <ul class="regist-header__list">
+                <li class="regist-header__item">
+                  <a href="#" class="regist-header__link">Вход</a>
+                </li>
+                <li class="regist-header__item">
+                  <a href="#" class="regist-header__link">Регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="header__lang">
+              <ul class="lang-header__list">
+                <li class="lang-header__item">
+                  <a href="" class="lang-header__link">UA</a>
+                </li>
+                <li class="lang-header__item">
+                  <span class="lang-header__span">RUS</span>
+                </li>
+              </ul>
+            </div>
+            <div class="header__cart">
+              <a href="#" class="cart-header__link">
+                <img
+                  src="images/icon/shopping-basket1.svg"
+                  alt="cart icon"
+                  class="cart-header__icon"
+                  width="23"
+                  height="23"
+                />
+                <span class="cart-header__sum">1000 грн.</span>
+                <div class="cart-header__num">10</div>
+              </a>
+            </div>
+            <div class="header__burger">
+              <div class="burger-header__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li>
+            <a href="index.html"><span>Главная</span></a>
+          </li>
+          <li>
+            <a href="index.html"><span>Каталог</span></a>
+          </li>
+          <li><span>Карточка товара</span></li>
+        </ul>
+        <section class="product">
+          <div class="product__wrapper">
+            <div class="product__img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/img/product.webp"
+                  width="200"
+                  height="200"
+                />
+                <img
+                  class="img-responsive"
+                  src="images/img/product.png"
+                  alt="greendrink flavor"
+                  width="558"
+                  height="558"
+                />
+              </picture>
+            </div>
+            <div class="product__content">
+              <h1 class="product__title title">WATERMELON FLAVOR</h1>
+              <div class="product__strength">
+                Крепость:
+                <span class="strength-product__select-value">DARK</span>
+                <div class="strength-product__select-box">
+                  <div class="strength-product__scale">
+                    <span class="strength-product__scale-item active"></span>
+                    <span class="strength-product__scale-item active"></span>
+                    <span class="strength-product__scale-item active"></span>
+                    <span
+                      class="strength-product__scale-item active-half"
+                    ></span>
+                    <span class="strength-product__scale-item"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__row">
+                <div class="product__price">1000 грн.</div>
+                <div class="product__qty product-card__qty">
+                  <div class="product-card__qty-minus">
+                    <img src="../images/icon/minus.svg" alt="minus icon" />
+                  </div>
+                  <input
+                    class="product-card__qty-input"
+                    type="number"
+                    min="0"
+                    value="1"
+                  />
+                  <div class="product-card__qty-plus">
+                    <img src="../images/icon/plus.svg" alt="plus icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="product__btns">
+                <button class="product__buy btn">КУПИТЬ</button>
+                <button class="product__oneclick btn btn-orange">
+                  КУПИТЬ В 1 КЛИК
+                </button>
+              </div>
+              <p class="product__description">
+                Яркое сочетание самых популярных цитрусовых и фруктов. В нем
+                гармонично соединяются грейпфрут, лайм и маракуйя.
+                Восхитительный микс отличается приятной кислинкой, нежной
+                сладостью и потрясающим ароматом.
+              </p>
+            </div>
+          </div>
+          <a href="catalog.html" class="product__back btn"
+            >ВЕРНУТЬСЯ В КАТАЛОГ</a
+          >
+        </section>
+      </div>
+
+      <section class="flavors">
+        <div class="container">
+          <div class="flavors__content">
+            <h2 class="flavors__title title">СМОТРИТЕ ТАКЖЕ</h2>
+            <div class="flavors__slider dark-mode">
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/blueberry.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/blueberry.jpg"
+                        alt="blueberry taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">blueberry</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/cola.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/cola.jpg"
+                        alt="cola taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">cola</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/eazypeach.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/eazypeach.jpg"
+                        alt="eazypeach taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">eazypeach</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/goa.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/goa.jpg"
+                        alt="goa taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">goa</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/grapefruit.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/grapefruit.jpg"
+                        alt="grapefruit taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">grapefruit</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/greendrink.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/greendrink.jpg"
+                        alt="greendrink taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">greendrink</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/jungleboom.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/jungleboom.jpg"
+                        alt="jungleboom taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">jungleboom</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/lemon.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/lemon.jpg"
+                        alt="lemon taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">lemon</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/mango.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/mango.jpg"
+                        alt="mango taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">mango</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/nordic.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/nordic.jpg"
+                        alt="nordic taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">nordic</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/oranjad.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/oranjad.jpg"
+                        alt="oranjad taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">oranjad</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/Pinewine.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/Pinewine.jpg"
+                        alt="Pinewine taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">Pinewine</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/pinkrose.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/pinkrose.jpg"
+                        alt="pinkrose taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">pinkrose</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/sweetpear.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/sweetpear.jpg"
+                        alt="sweetpear taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">sweetpear</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/tmix.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/tmix.jpg"
+                        alt="tmix taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">tmix</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/tropios.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/tropios.jpg"
+                        alt="tropios taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">tropios</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="flavors__slide">
+                <a href="#" class="slide-flavors__link">
+                  <div class="slide-flavors__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="images/img/flavor/сurrant.webp"
+                      />
+                      <img
+                        class="img-responsive"
+                        src="images/img/flavor/сurrant.jpg"
+                        alt="сurrant taste"
+                      />
+                    </picture>
+                  </div>
+                  <div class="slide-flavors__content">
+                    <h3 class="flavors__title">сurrant</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="flavors__pagination slick-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__middle">
+        <div class="container">
+          <div class="footer__wrapper">
+            <a href="index.html" class="footer__logo">
+              <picture>
+                <source type="image/webp" srcset="images/img/logo.webp" />
+                <img
+                  src="images/img/logo.png"
+                  alt="logo"
+                  height="82"
+                  width="210"
+                />
+              </picture>
+            </a>
+            <div class="footer__socials">
+              <div class="socials-footer__text">Подписывайтесь на нас:</div>
+              <ul class="socials-footer__list">
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/facebook.svg"
+                      alt="facebook icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/instagram.svg"
+                      alt="instagram icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/viber.svg"
+                      alt="viber icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="socials-footer__item">
+                  <a href="#" class="socials-footer__link"
+                    ><img
+                      src="images/icon/footer/telegram.svg"
+                      alt="telegram icon"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div><span>LOUD </span>© Все права защищены 2021</div>
+            <noindex class="footer__agency">
+              <a href="https://geniustudio.net" target="_blank">
+                <img
+                  src="images/icon/logo_geniustudio.svg"
+                  alt="geniustudio logo"
+                />
+              </a>
+            </noindex>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
