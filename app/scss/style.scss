@@ -1690,6 +1690,7 @@
       img {
         width: 14px;
         height: 14px;
+        object-fit: contain;
       }
     }
     input.product-card__qty-input[type="number"] {
